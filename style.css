@@ -37,13 +37,21 @@ ul li{
 ul li:hover {
   background: #ddd;
 }
-.delete {
+.delete{
     position: absolute;
     right: 0;
     top: 0;
     padding: 07px 16px 12px 16px;
   }
+ 
   .delete:hover {
     background-color: crimson;
     color: white;
   }
+
+ 
+    ul li.checked {
+        background: rgb(138, 35, 35);
+        color: white;
+        text-decoration: line-through;
+      }

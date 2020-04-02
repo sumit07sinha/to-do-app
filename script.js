@@ -15,6 +15,10 @@ window.onload=()=>{
     Array.from(myToDoList).forEach((element) => {
         let span = document.createElement("SPAN");
         let txt = document.createTextNode("x");
+        // let checkBox= document.createElement("input");
+        // checkBox.setAttribute('type','checkbox');
+        // checkBox.className="checked";
+        // element.appendChild(checkBox);
         span.className = "delete";
         span.appendChild(txt);
         element.appendChild(span);
@@ -27,6 +31,11 @@ window.onload=()=>{
             ulListItems.removeChild(event.target.parentElement);
     })}) 
     // to add checkbox in all the items
+   document.querySelector('ul').addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+  ev.target.classList.toggle('checked');
+  }
+}, false);
     }
   
 
