@@ -37,16 +37,6 @@ window.onload=()=>{
         todoElementbyValue(inputValue);
         localStorage.setItem("mylistitems",todoListToBeSaved);
        }
-  
-      
-  
-      
-  
-  
-  
-  
-  
-  
       let myToDoList= document.getElementsByTagName('li');
       Array.from(myToDoList).forEach((element) => {
           let span = document.createElement("SPAN");
