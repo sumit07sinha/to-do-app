@@ -18,8 +18,6 @@ window.onload=()=>{
               span.appendChild(txt);
           }
     }
-  
-  
        // to add element
        const todoListToBeSaved = [];
   
